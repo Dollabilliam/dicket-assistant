@@ -35,7 +35,9 @@ class Program
                 Console.WriteLine($"Error occurred: {ex.Message}");
             }
 
-            await Task.Delay(TimeSpan.FromSeconds(15));
+            var random = new Random();
+            var randomNumber = random.Next(15, 61);
+            await Task.Delay(TimeSpan.FromSeconds(randomNumber));
         }
     }
 }
