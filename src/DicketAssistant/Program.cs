@@ -21,7 +21,7 @@ class Program
 
                 if (content.Contains("error"))
                 {
-                    Console.WriteLine("Error found in response, continuing loop...");
+                    Console.WriteLine("Error found in response, {0}, continuing loop...", content);
                 }
                 else
                 {
